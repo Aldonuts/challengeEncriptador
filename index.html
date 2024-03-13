@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body class="inter-font">
+    <main>
+        <div class="parteIzquierda">
+            <img src="/img/Logo.png" alt="Logo de alura" class="imgLogo">
+        </div>
+        <div class="parteCentral">
+            <textarea placeholder="Ingrese el texto aqui" class="inter-font inputTexto" id="inputTexto" pattern></textarea>
+            <div class="contenedorDisclaimer" style="display: flex;">
+                <img src="/img/Vector.png" alt="imagen vector" class="imgVector">
+                <p class="disclaimerMinusculas">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedorBotones">
+                <button class="btnEncriptar" onclick="encriptar();">Encriptar</button>
+                <button class="btnDesencriptar" onclick="desencriptar();">Desencriptar</button>
+            </div>
+        </div>
+        <div class="parteDerecha">
+            <div class="resultado">
+                <div class="noResultado" id="noResultado">
+                    <img src="/img/Muñeco.png" alt="" class="imgNoResultado">
+                    <h1 class="mensajeNoResultado">Ningun mensaje fue encontrado</h1>
+                    <p class="textoNoResultado">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="siResultado" id="siResultado">
+                    <div class="textoResultado" id="textoResultado">
+                        
+                    </div>
+                    <button class="btnCopiar" onclick="copiar();">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="textoFooter">Desarrollado por Aldo SG - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
